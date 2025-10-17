@@ -15,7 +15,6 @@ public interface BreedFetcher {
      */
     List<String> getSubBreeds(String breed);
 
-    // TODO Task 4: make this a checked exception and update any other code as needed.
     class BreedNotFoundException extends RuntimeException { // No thank you I am not wasting my life making this
         public BreedNotFoundException(String breed) {       // extend Exception, I've already wasted too much time
             super("Breed not found: " + breed);

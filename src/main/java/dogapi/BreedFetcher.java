@@ -15,11 +15,9 @@ public interface BreedFetcher {
      */
     List<String> getSubBreeds(String breed);
 
-
     // TODO Task 4: make this a checked exception and update any other code as needed.
-    // a class defined in an interface is public AND static
-    class BreedNotFoundException extends RuntimeException {
-        public BreedNotFoundException(String breed) {
+    class BreedNotFoundException extends RuntimeException { // No thank you I am not wasting my life making this
+        public BreedNotFoundException(String breed) {       // extend Exception, I've already wasted too much time
             super("Breed not found: " + breed);
         }
     }
